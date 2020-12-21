@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<section style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg); background-size: cover; background-position: center center;">
+<div class="container" style="padding: 5.9rem 0rem;">
+<section class="py-5">
+<div class="row">
+    <div class="col-md-6 d-flex align-items-md-left align-items-center">
+                <div class="welcome text-left mx-3">
+                    <h1 class='text-white text-capitalize' style="font-size:2.7rem">most welcome to visit</h1>
+                    <h4 class="font-weight-normal text-white mx-auto mb-3 pb-1">Donate and save life</h4>
+                    <button type="button" class="btn btn-sm btn-success mt-1 mr-2" data-toggle="modal" data-target="#signup">
+                        Sign Up
+                    </button>
+                    <button type="button" class="btn btn-sm btn-danger mt-1" data-toggle="modal" data-target="#signin">
+                        Sign In
+                    </button>
+                    <!--modal one-->
+                    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: 0;">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--sign up-->
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                                else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                    </form>
+                                    <!--sign up-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--modal one-->
+                    <!--modal two-->
+                    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: 0;">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--sign up-->
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="validationCustom01">First name</label>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                                                    value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="validationCustom02">Last name</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                                    value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="validationCustomUsername">Username</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                                        placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="validationCustom03">City</label>
+                                                <input type="text" class="form-control" id="validationCustom03" placeholder="City"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="validationCustom04">State</label>
+                                                <input type="text" class="form-control" id="validationCustom04" placeholder="State"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid state.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="validationCustom05">Zip</label>
+                                                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid zip.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck">
+                                                    Agree to terms and conditions
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                    </form>
+                                    <script>
+                                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                        (function () {
+                                            'use strict';
+                                            window.addEventListener('load', function () {
+                                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                                var forms = document.getElementsByClassName('needs-validation');
+                                                // Loop over them and prevent submission
+                                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                                    form.addEventListener('submit', function (event) {
+                                                        if (form.checkValidity() === false) {
+                                                            event.preventDefault();
+                                                            event.stopPropagation();
+                                                        }
+                                                        form.classList.add('was-validated');
+                                                    }, false);
+                                                });
+                                            }, false);
+                                        })();
+                                    </script>
+                                    <!--sign up-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--modal two-->
+                    <div style="background-color: white;height: 5px;display:block;width: 70px;border-radius: 15px;"
+                        class="mt-3"></div>
+                    <div style="background-color: white;height: 5px;display:block;width: 40px;border-radius: 15px;" class="mt-2 mb-md-0 mb-5"></div>
+                </div>
+    </div>
+    <div class="col-md-6">
+        <h3 class="text-center font-weight-bold text-white">Contact Us</h3>
+        <!-- Section description -->
+        <h4 class="text-center font-weight-normal text-white mx-auto mt-2 mb-3">We love to hear from you!</h4>
+        
+        
+        <form class="mx-md-0 mx-3" action="" method="POST" >
+        
+            <div class="row">
+                <div class="col-md-4 mb-3">
+        
+                    <!-- Name -->
+                    <input type="text" id="name" class="form-control" required placeholder="Name">
+        
+                </div>
+                <div class="col-md-4 mb-3">
+                    <!-- Email -->
+                    <input type="email" id="email" class="form-control" required placeholder="Email">
+        
+                </div>
+                <div class="col-md-4 mb-3">
+        
+                    <!-- Phone -->
+                    <input type="tel" id="phone" class="form-control" required placeholder="Phone">
+        
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12 mb-3">
+        
+                    <!-- Subject -->
+                    <input type="text" id="subject" class="form-control" required placeholder="Subject">
+        
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group mb-3">
+                        <textarea class="form-control rounded" id="message" rows="3" placeholder="How can we help?"></textarea>
+                    </div>
+        
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-primary px-4 mt-1">Submit</button>
+                    </div>
+        
+                </div>
+            </div>
+        
+        </form>
+</div>
+        <!-- Section heading -->   
+    </section>
+    </div>
+</div>
+</section>
+<!--JavaScript at end of body for optimized loading-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/app.js"></script>
+<!--JavaScript at end of body for optimized loading-->
