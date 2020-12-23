@@ -1,0 +1,227 @@
+html {
+  font-size: 62.5%;
+}
+
+.headrow {
+  background-color: #020B1B;
+  padding: 2rem 0rem;
+  font-size: 1.8rem;
+}
+
+.headrow .navbar-brand {
+  font-size: 1.8rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.headrow .navbar-nav li a {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  padding-left: 2rem;
+}
+
+.headrow li {
+  margin-left: 2rem;
+}
+
+.headrow ul {
+  margin-left: 11rem;
+}
+
+.headrow .btn:hover {
+  -webkit-transform: translateY(-0.5rem) !important;
+          transform: translateY(-0.5rem) !important;
+}
+
+@-webkit-keyframes nav {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@keyframes nav {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+.btn {
+  padding: 0.8rem 1.8rem !important;
+  background: #C12645;
+  color: white !important;
+  border-radius: 2rem !important;
+  font-size: 1.4rem !important;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.hero {
+  background: #06173A;
+}
+
+.hero h1 {
+  font-size: 4.4rem;
+  color: white;
+}
+
+.hero h1 strong {
+  color: #C12645;
+}
+
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  width: 45rem;
+  margin: 3rem 0rem;
+}
+
+.hero .innerhero {
+  padding: 10.2rem 0rem;
+}
+
+.hero .musicimg {
+  -webkit-animation: heroanim 2s ease-in-out alternate infinite;
+          animation: heroanim 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes heroanim {
+  0% {
+    -webkit-transform: translateY(1.4rem) rotate(2deg);
+            transform: translateY(1.4rem) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-1.4rem) rotate(-2deg);
+            transform: translateY(-1.4rem) rotate(-2deg);
+  }
+}
+
+@keyframes heroanim {
+  0% {
+    -webkit-transform: translateY(1.4rem) rotate(2deg);
+            transform: translateY(1.4rem) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-1.4rem) rotate(-2deg);
+            transform: translateY(-1.4rem) rotate(-2deg);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero p {
+    width: 32rem;
+  }
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .btn {
+    margin-left: 0rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-toggler {
+    padding: .50rem .75rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    border: 1px solid white !important;
+    border-radius: .50rem;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    margin-left: -2rem !important;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+  }
+  .hero p {
+    width: 47rem;
+  }
+  li {
+    margin-left: 0 !important;
+  }
+  .hero h1 {
+    font-size: 4.6em;
+  }
+  .btn {
+    margin-right: 0.4rem;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .hero p {
+    color: white;
+    font-size: 1.5rem;
+    width: 39rem;
+    margin: 3rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .btn {
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    color: white;
+    font-size: 1.4rem;
+    width: 26rem;
+    margin: 3rem 0rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
