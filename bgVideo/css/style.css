@@ -15,14 +15,12 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    /* background-color: #0998f5; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
     padding: 3.5rem;
     z-index: 3333;
-    transition: 2s;
 }
 
 .overlay {
@@ -30,7 +28,7 @@
     height: 100%;
     width: 100%;
     background-color: #0998f5;
-    opacity: 0.4;
+    opacity: 0.3;
     z-index: 3333;
 }
 
@@ -144,23 +142,28 @@
     list-style: none;
     text-align: justify;
 }
-
+.navbar ul li{
+    margin: 0.7rem 0rem;
+}
 .navbar ul li a {
     text-transform: uppercase;
     font-size: 1.3rem;
     text-decoration: none;
-    margin: 0.7rem 0rem;
     font-weight: 700;
+    color: #0998f5;
 }
 
 /* active */
 .active {
     right: 400px;
+            transition: 2s linear;
+
 }
 
 .nav_active {
     z-index: 22223;
     opacity: 1;
+
 }
 
 @media only screen and (max-width:991px) {
@@ -168,6 +171,7 @@
     /* active */
     .active {
         right: 300px;
+        transition: 2s linear;
     }
 
     /* navbar */
