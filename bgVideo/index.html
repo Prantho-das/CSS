@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <video src="./assets/videos/production ID_4612067.mp4" class="video" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="container_main">
+            <div class="logo_nav">
+                <a href="#" class="logo">Travel</a>
+                <a class="nav_button"><i class="fas fa-bars nav_icon"></i></a>
+            </div>
+            <div class="texts">
+                <h1 class="texts_title">Never stop to</h1>
+                <h2 class="texts_title_two">Exploring the world</h2>
+                <p class="texts_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi,
+                    provident impedit itaque blanditiis dolorem delectus.
+                </p>
+                <a href='#' title="Explore" class="texts_button">Explore</a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram    "></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp    "></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const nav_button = document.querySelector('.nav_button');
+        const nav_icon = document.querySelector('.nav_icon');
+        const navbar = document.querySelector('.navbar');
+        const container_main = document.querySelector('.container_main');
+        nav_button.addEventListener('click', () => {
+            container_main.classList.toggle('active')
+            nav_icon.classList.toggle('fa-bars')
+            nav_icon.classList.toggle('fa-times')
+            navbar.classList.toggle('nav_active')
+        })
+    </script>
+</body>
+
+</html>

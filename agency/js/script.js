@@ -1,3 +1,12 @@
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+            .register("../serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+    })
+}
+
 var typed = new Typed(".type", {
     strings: ["I am a Designer", "I am Developer", "I am Loser"],
     typeSpeed: 50,
