@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import './var';
+//button
+body {
+    margin: 0px;
+    padding-top: 300px;
+    box-sizing: border-box;
+    font-family: $main_font;
+}
+.mbtn {
+    background-color: $first-color;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+    text-transform: uppercase;
+    &:hover {
+        background: $first-color-alt;
+    }
+}

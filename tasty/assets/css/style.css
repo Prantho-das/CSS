@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  margin: 0px;
+  padding-top: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.mbtn {
+  background-color: #069C54;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  text-transform: uppercase;
+}
+
+.mbtn:hover {
+  background: #048654;
+}
+/*# sourceMappingURL=style.css.map */
