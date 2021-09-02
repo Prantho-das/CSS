@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: .40em 1rem;
+}
+
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row .save {
+  color: #16a016;
+}
+
+.row .please {
+  color: green;
+}
+
+.row .please .blood {
+  color: red;
+}
+
+.modal form {
+  margin: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

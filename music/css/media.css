@@ -1,0 +1,107 @@
+@media only screen and (max-width: 991px) {
+  .hero p {
+    width: 32rem;
+  }
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .btn {
+    margin-left: 0rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-toggler {
+    padding: .50rem .75rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    border: 1px solid white !important;
+    border-radius: .50rem;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    margin-left: -2rem !important;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+  }
+  .hero p {
+    width: 47rem;
+  }
+  li {
+    margin-left: 0 !important;
+  }
+  .hero h1 {
+    font-size: 4.6em;
+  }
+  .btn {
+    margin-right: 0.4rem;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .hero p {
+    color: white;
+    font-size: 1.5rem;
+    width: 39rem;
+    margin: 3rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .btn {
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    color: white;
+    font-size: 1.4rem;
+    width: 26rem;
+    margin: 3rem 0rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */

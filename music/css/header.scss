@@ -1,0 +1,32 @@
+.headrow{
+    background-color: $header;
+    padding: 2rem 0rem;
+    font-size: 1.8rem;
+    .navbar-brand{
+        @include foco;
+        font-size: 2rem;
+    }
+    .navbar-nav li a{
+        @include foco;
+        margin-top: 0.5rem;
+        text-transform: capitalize;
+        padding-left: 2rem;
+    }
+    li{
+        margin-left: 2rem;
+    }
+    ul{
+        margin-left: 11rem;
+    }
+    .btn:hover{
+        transform: translateY(-0.5rem) !important;
+    }
+}
+@keyframes nav{
+    0%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}

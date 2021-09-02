@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.light {
+  --primary: #007f50;
+  --primaryhover: #05af71;
+  --secondary: #626367;
+  --third: #858585;
+  --font: Roboto;
+  --background: white;
+  --text: black;
+}
+.dark {
+  --primary: #007f50;
+  --primaryhover: #05af71;
+  --secondary: #d8d8d8;
+  --third: #858585;
+  --font: Roboto;
+  --background: black;
+  --text: white;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font);
+  transition: 0.4s linear;
+  transition-delay: 1.2s;
+}
+body {
+  background: var(--background);
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+nav {
+  transition: all 0.4s ease;
+  background-color: var(--background);
+}
+.hambarger {
+  color: var(--text);
+}
+.nav-bar {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem auto;
+  padding: 1.5rem 0rem;
+}
+.nav-bar .logo {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--text);
+}
+.nav-links {
+  transition: display 0.3s ease-in-out;
+  transition-delay: 0.5s;
+  
+}
+.nav-bar ul {
+  display: inline-flex;
+}
+.nav-bar ul li {
+  list-style: none;
+  margin-right: 1.5rem;
+}
+.nav-bar ul li:last-child {
+  margin-right: 0rem;
+}
+.nav-bar ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.nav-bar ul li .activeNav {
+  color: var(--primary) !important;
+}
+.link {
+  color: var(--secondary);
+}
+.hambarger {
+  display: none;
+}
+.container {
+  width: 70%;
+  margin: 0rem auto;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 7rem);
+}
+.hero_text {
+  width: 50%;
+}
+.hero_text h1 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.hero_text p {
+  font-size: 1.4rem;
+  color: var(--secondary);
+  margin: 2rem 0rem;
+  line-height: 2.3rem;
+  width: 80%;
+}
+.btn {
+  background: var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.8rem;
+  color: var(--background);
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 9px rgba(128, 128, 128, 0.589);
+}
+.btn:hover {
+  background: var(--primaryhover);
+}
+.hero_img {
+  max-width: 50%;
+  position: relative;
+}
+.hero_img img {
+  width: 100%;
+}
+.active {
+  box-shadow: 2px 2px 9px rgb(189 189 189 / 60%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.about {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.about .about_text {
+  width: 50%;
+  margin-left: 5rem;
+}
+.about .about_img {
+  width: 50%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.about_img img {
+  width: 100%;
+}
+.about_text h4 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.about_text h1 {
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  color: var(--text);
+}
+.about_text p {
+  color: var(--secondary);
+  margin: 1.5rem 0rem 2rem 0rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.about_text .btn {
+  margin-top: 1rem;
+}
+.service {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.service h3 {
+  color: var(--primary);
+}
+.service h1 {
+  color: var(--secondary);
+}
+.service_card {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  column-gap: 1.5rem;
+}
+.service_card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service_title {
+  margin: 1.3rem 0rem 2rem;
+  color: var(--secondary);
+}
+.service_title h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.service_title h1 {
+  font-size: 1.8rem;
+  color: var(--text);
+}
+.service .card_img {
+  width: 4rem;
+  height: 4rem;
+}
+.service .card_img img {
+  color: var(--text);
+  fill: red;
+}
+.card {
+  margin-bottom: 2rem;
+}
+.card_title {
+  margin: 1rem 0.1rem;
+  color: var(--text);
+}
+.card_paragraph {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+.back_to_top {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  background: var(--primary);
+  color: var(--background);
+  font-weight: bold;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.nav_active {
+  display: flex !important;
+}
+.special {
+  padding: 2rem 0rem;
+}
+.special_title {
+  text-align: center;
+}
+.special_title h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.special_card {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  column-gap: 3rem;
+}
+.service_card .card_img {
+  width: 4rem;
+}
+.special_title h1 {
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.special .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 3px 20px rgb(226, 226, 226);
+  border-radius: 12px;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+.special_card .card_img {
+  align-self: center;
+}
+.special_card .card_cart {
+  display: flex;
+  justify-content: space-between;
+}
+.special_card .card .card_content {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.special_card p {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+.special_card .card_cart p {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.card_cart i {
+  color: var(--text);
+  background-color: var(--primary);
+  padding: 1rem;
+  font-size: 1rem;
+  border-top-left-radius: 0.5rem;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playstore_icon {
+  display: flex;
+  width: 9rem;
+  justify-content: space-between;
+}
+.app_text {
+  margin-left: 3.3rem;
+}
+.app_text h4 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.app_text h1 {
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  color: var(--text);
+}
+.app_text p {
+  color: var(--secondary);
+  margin: 1.5rem 0rem 2rem 0rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.playstore_icon img {
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.playstore_icon a:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .about_text {
+  flex-basis: 70%;
+}
+
+footer {
+  padding: 3rem 0rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+}
+.footer_logo {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+footer .social p {
+  font-size: 1.05rem;
+  color: var(--secondary);
+  margin-top: 0.7rem;
+}
+.social_icon {
+  margin-top: 1.5rem;
+}
+.social_icon i {
+  font-size: 1.3rem;
+  margin-right: 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.social_icon i:last-child {
+  margin-right: 0rem;
+}
+.footer .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul li:last-child {
+  margin-bottom: 0rem;
+}
+footer ul li a {
+  font-size: 1.14rem;
+  color: var(--third);
+}
+.copyright {
+  text-align: center;
+  color: var(--third);
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+.theme {
+  color: var(--text);
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .theme {
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+  }
+  .nav-bar {
+    padding: 0.5rem 0rem;
+    width: 95%;
+  }
+  .nav-bar .nav-links {
+    position: fixed;
+    background-color: var(--background);
+    color: var(--background);
+    top: 3rem;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0rem auto;
+    padding: 1rem 0rem;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    z-index: 999999;
+    box-shadow: 2px 2px 10px lightgray;
+  }
+  .nav-links ul {
+    display: block;
+  }
+  .nav-links li {
+    margin: 1rem 0rem;
+  }
+  .hambarger {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .playstore_icon {
+    display: flex;
+    flex-direction: column;
+  }
+  .playstore_icon img:last-child {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+  }
+  footer div {
+    margin-bottom: 1rem;
+  }
+  .hero p,
+  .about p,
+  .app p,
+  .contact p,
+  .service p {
+    font-size: 1.1rem;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .hero .hero_text {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .hero .hero_text p {
+    width: 90%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about_img {
+    margin-top: 7rem;
+  }
+  .about .about_text {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .about .about_text p {
+    width: 90%;
+  }
+  .special_card {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  .app {
+    flex-direction: column;
+  }
+  .app_img {
+    width: 60%;
+  }
+  .app p,
+  .contact p {
+    line-height: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+  }
+  .about_text,
+  .app_text {
+    margin-left: 0rem !important;
+  }
+}

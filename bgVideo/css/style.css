@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container_main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 3.5rem;
+    z-index: 3333;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0998f5;
+    opacity: 0.3;
+    z-index: 3333;
+}
+
+/* vidoo */
+.video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2222;
+}
+
+/* logo_nav */
+.logo_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_nav a {
+    color: white;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav_button {
+    margin-top: 0.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* texts */
+.texts {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.texts_title {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.texts_title_two {
+    font-size: 3.2em;
+}
+
+.texts_paragraph {
+    margin: 0.8rem 0rem 1.5rem 0rem;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    max-width: 50%;
+}
+
+.texts_button {
+    background-color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.1s linear;
+    letter-spacing: 1px;
+}
+
+.texts_button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+/* social */
+.social ul {
+    list-style: none;
+    display: flex;
+}
+
+.social ul li {
+    margin-right: 1.2rem;
+    transition: 0.3s linear;
+}
+
+.social ul li a {
+    font-size: 1.5rem !important;
+}
+
+.social ul li:hover {
+    transform: translateY(-0.5rem) scale(1.2);
+}
+
+.social a {
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    z-index: 2221;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: justify;
+}
+.navbar ul li{
+    margin: 0.7rem 0rem;
+}
+.navbar ul li a {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #0998f5;
+}
+
+/* active */
+.active {
+    right: 400px;
+            transition: 2s linear;
+
+}
+
+.nav_active {
+    z-index: 22223;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width:991px) {
+
+    /* active */
+    .active {
+        right: 300px;
+        transition: 2s linear;
+    }
+
+    /* navbar */
+    .navbar {
+        width: 300px;
+    }
+
+    .nav_button {
+        margin-top: 0.32rem;
+    }
+
+    /*texts*/
+    .texts_paragraph {
+        max-width: 100%;
+        margin: 0.8rem 0rem 1.5rem 0rem;
+    }
+
+    .texts_title {
+        font-size: 2.75em;
+        font-weight: 800 !important;
+    }
+
+    .texts_title_two {
+        font-size: 2.2em;
+        font-weight: 700 !important;
+    }
+
+    /* container */
+    .container_main {
+        padding: 2.4rem 2rem;
+    }
+
+    /* social */
+    .social ul li a {
+        font-size: 1.2rem !important;
+    }
+}
+@media only screen and (max-width:425px) {
+
+    /* active */
+    .active {
+        right: 250px;
+    }
+
+    /* navbar */
+    .navbar {
+        width: 250px;
+    }
+
+    /*texts*/
+    .texts_paragraph {
+    font-size: 1em;
+    }
+
+    .texts_title {
+        font-size: 2.1em;
+    }
+
+    .texts_title_two {
+        font-size: 1.8em;
+        font-weight: 700 !important;
+    }
+    /* social */
+    .social ul li a {
+        font-size: 1.2rem !important;
+    }
+}

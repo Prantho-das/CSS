@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.light {
+  --backgroundone: rgba(93, 199, 241, 0.788);
+  --backgroundtwo: rgba(2, 228, 2, 0.664);
+}
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-image: linear-gradient(
+    to top right,
+    var(--backgroundone),
+    var(--backgroundtwo)
+  );
+}
+.circle {
+  background-image: linear-gradient(
+    to top right,
+    rgb(93, 199, 241),
+    rgba(76, 0, 130, 0.5)
+  );
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 54.5%;
+  top: 11%;
+  z-index: -99;
+}
+.circleBottom {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(93, 199, 241),
+    rgba(76, 0, 130, 0.438)
+  );
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 54.5%;
+  bottom: 11%;
+  z-index: -99;
+}
+.form {
+  height: 24rem;
+  width: 18.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form img {
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.form .form-control {
+  margin-bottom: 1rem;
+  background: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  transition: 0.1s linear;
+  border: 0px solid transparent;
+}
+.form .form-control input {
+  padding: 0.3rem 0rem;
+  outline: none;
+  border: transparent;
+  margin-right: 0.4rem;
+  font-size: medium;
+}
+.form .form-control input::placeholder {
+  font-size: large;
+}
+.form button {
+  padding: 0.46rem 1.3rem;
+  border: 0px solid transparent;
+  border-radius: 0.4rem;
+  font-size: 1.07rem;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to top right,
+    var(--backgroundone),
+    var(--backgroundtwo)
+  );
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1.3px;
+  box-shadow: 3px 2px 10px rgba(219, 219, 219, 0.849);
+  margin-top: 0.6rem;
+  display: block;
+  margin: 0rem auto;
+}
+.form button:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgba(76, 0, 130, 0.5),
+    rgba(93, 199, 241, 0.788)
+  );
+}
+.form-control:focus-within{
+  border: 2px solid rgba(0, 0, 255, 0.603);
+}
+@media only screen and (max-width: 720px) {
+  .circle {
+    width: 9rem;
+    height: 9rem;
+  }
+  .circleBottom {
+    width: 9rem;
+    height: 9rem;
+  }
+}

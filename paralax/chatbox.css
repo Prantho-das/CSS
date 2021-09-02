@@ -1,0 +1,78 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background-image: url("1.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 999;
+}
+.navbar{
+    padding: 1.2rem 0rem;
+    transition: 0.4s linear;
+    overflow: hidden;
+    display: none;
+    z-index:99999999;
+}
+.p{
+    position: fixed;
+    width: 73%;
+    display:flex;
+    top: 0px;
+}
+.write{
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+}
+.nav-item{
+    padding-right: 2rem;
+}
+.navbar-brand{
+    padding-left: 3rem;
+}
+.nav-link{
+    font-family:sans-serif;
+}
+.write h1{
+    color:rgb(0, 0, 0);
+}
+.footer{
+    background: black;
+    padding:2rem 0rem;
+    font-size: 1.2rem;
+    color: white;
+}
+footer i{
+    padding:0px 20px;
+    cursor:pointer;
+}
+.icon{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    animation: jump 0.9s linear infinite;
+    cursor: pointer;
+}
+.text{
+    padding-top: 25%;
+}
+@keyframes jump{
+    from{
+        bottom: 0rem;
+    }
+    to {
+        bottom: 1.3rem;
+    }
+}

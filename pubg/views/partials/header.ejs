@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      href="./img/favicon.ico"
+      sizes="16x16"
+      type="image/png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= locals.title ? `Pubg lite | ${title}`: 'Pubg Lite' %> </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        font-family: "Roboto Condensed", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      .twitter_input:focus + label,
+      .twitter_input:valid + label {
+        font-size: 0.9rem;
+        color: #3b82f6;
+        top: -1px;
+        left: 6px;
+      }
+      .twitter_input:focus,
+      .twitter_input:valid {
+        border: 1.3px solid #3b82f6;
+      }
+    </style>
+  </head>
+
+  <body>
