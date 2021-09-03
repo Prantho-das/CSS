@@ -28,8 +28,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(auth_check);
 
+// database connection
 db();
 
+// routes lists
 app.get("/", pubgcontroller.index);
 app.get("/bc", pubgcontroller.bc);
 app.get("/verify", verify_check, pubgcontroller.verify);

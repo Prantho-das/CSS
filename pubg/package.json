@@ -5,11 +5,11 @@
   "main": "server.js",
   "engines": {
     "node": "14.17.1",
-    "npm":"6.14.13 "
+    "npm": "6.14.13 "
   },
   "scripts": {
     "start": "node server.js",
-    "tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css"
+    "tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch"
   },
   "author": "pubg",
   "license": "ISC",
@@ -23,7 +23,6 @@
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.2",
-    "joi": "^17.4.2",
     "mongoose": "^6.0.4",
     "tailwindcss": "^2.2.9"
   }

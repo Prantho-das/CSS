@@ -1,4 +1,4 @@
- <footer>
+ <footer x-data="pubg">
       <div
         class="
           footer
@@ -12,20 +12,14 @@
         "
       >
         <img
-          class="md:w-1 w-10/12"
+          class="w-72 md:w-80"
           src="./img/footer-img.png"
           alt="footer-img"
         />
-        <h3 class="text-center text-xs md:text-base uppercase text-white mt-2">
-          &COPY; 2018-
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          pubg corporation.all rights reserved
-        </h3>
+        <h3 class="text-center text-xs md:text-base uppercase text-white mt-2" x-ref="copyright_text"></h3>
       </div>
     </footer>
     <script src="./js/alpine.min.js" defer></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

@@ -634,11 +634,6 @@ video {
   z-index: 50;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -791,6 +786,10 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .w-1\/3 {
@@ -1352,16 +1351,16 @@ video {
     height: calc(100vh - 4rem);
   }
 
-  .md\:w-1 {
-    width: 0.25rem;
-  }
-
   .md\:w-6 {
     width: 1.5rem;
   }
 
   .md\:w-56 {
     width: 14rem;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:w-96 {

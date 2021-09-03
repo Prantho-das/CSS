@@ -21,6 +21,10 @@ document.addEventListener("alpine:init", () => {
   });
   Alpine.data("pubg", () => ({
     init() {
+      document.addEventListener("contextmenu", (event) =>event.preventDefault());
+      if (this.$refs.copyright_text) {
+        this.$refs.copyright_text.innerHTML = `&COPY; 2018-${new Date().getFullYear()} pubg corporation.all rights reserved`;
+      };
       let date = new Date();
       let d = date.toLocaleDateString().split("/");
       d = `${parseInt(d[0])} ${parseInt(d[1]) + 1}, ${parseInt(d[2])}`;
@@ -34,7 +38,7 @@ document.addEventListener("alpine:init", () => {
       var countDownDate = this.$store.pubg_store.timer_start;
       if (!this.$refs.countdowntime) {
         return false;
-      }
+      };
       const timer = setInterval(() => {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -79,16 +83,18 @@ document.addEventListener("alpine:init", () => {
       close_item();
     },
     message_close() {
-      fetch("http://localhost:5000/logout", {
+      fetch("https://midasbuy.herokuapp.com/logout", {
         method: "POST",
-        headers:{
-          "Content-Type":"application/json"
-        }
-      }).then((res) =>res.json())
-      .then((result) => console.log(result))
-      .catch((err) => window.location.reload());
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .then((result) => console.log(result))
+        .catch((err) => window.location.reload());
 
       this.$store.pubg_store.message = false;
+
       close_item();
     },
   }));
