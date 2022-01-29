@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.cards {
+  padding: 2rem 0rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  font-family: Fira Code;
+  flex-direction: column;
+  max-width: 28rem;
+  flex: 1 1 24rem;
+  border-radius: 0.7rem ;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.459);
+  overflow: hidden;
+  cursor: pointer;
+  &_img {
+    img { 
+      max-width: 100%;
+    }
+  }
+  &_description {
+    padding: 1.3rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      word-spacing: normal;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
