@@ -2,9 +2,73 @@ sudo -i (login to admin user)
 pwd (path check)
 cat >file (file create)
 ls -a (hidden file)
+ll (permission with file name)
 cd (main)
 sudo apt upgrade(repo update)
 sudo apt install package(install package)
 nan command-name(command info)
 top (task info)
 kill pid(task kill)
+3 types of file system -------
+Read 4,Write 2,Execute 1
+complete permission 7
+chmod (change permission)
+vim editor-----------
+vim filename
+>i
+>things to write
+>escape
+>:wq
+nano editor----------
+nano file name (create file)
+permission----------
+drwx
+r-x
+r-x 2 it it 4096 ডিসেম্বর  28 23:41 Public
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------error------------------------------
+sudo service apache2 stop
+sudo service mysql stop
+  
