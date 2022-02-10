@@ -71,4 +71,5 @@ r-x 2 it it 4096 ডিসেম্বর  28 23:41 Public
 ----------------------------error------------------------------
 sudo service apache2 stop
 sudo service mysql stop
-  
+digital signature:
+export NODE_OPTIONS=--openssl-legacy-provider
