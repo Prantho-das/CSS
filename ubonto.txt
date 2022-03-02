@@ -46,3 +46,4 @@ sudo service apache2 stop
 sudo service mysql stop
 digital signature:
 export NODE_OPTIONS=--openssl-legacy-provider
+sudo systemctl stop nginx
