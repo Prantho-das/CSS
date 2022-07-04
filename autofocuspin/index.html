@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Focus Pin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="h-screen grid place-items-center">
+      <div class="autofocus">
+        <h2 class="text-xl font-bold mb-2">Enter Your Pin</h2>
+        <!-- //<php // if (isset($_GET) && !empty($_GET) && count($_GET)> 0) {
+        // print_r($_GET);
+        // }
+        //?> -->
+        <form action="" method="GET">
+          <div class="flex gap-3">
+            <input
+              minlength="1"
+              maxlength="1"
+              name="pin[]"
+              class="pin rounded-md border-2 px-2 border-gray-500 active:border-indigo-500 shadow-md w-24 py-2"
+              type="number"
+            />
+            <input
+              minlength="1"
+              maxlength="1"
+              name="pin[]"
+              class="pin rounded-md border-2 px-2 border-gray-500 active:border-indigo-500 shadow-md w-24 py-2"
+              type="number"
+            />
+            <input
+              minlength="1"
+              maxlength="1"
+              name="pin[]"
+              class="pin rounded-md border-2 px-2 border-gray-500 active:border-indigo-500 shadow-md w-24 py-2"
+              type="number"
+            />
+            <input
+              minlength="1"
+              maxlength="1"
+              name="pin[]"
+              class="pin rounded-md border-2 px-2 border-gray-500 active:border-indigo-500 shadow-md w-24 py-2"
+              type="number"
+            />
+          </div>
+          <div class="flex justify-between mt-2">
+            <button
+              type="submit"
+              class="px-3 py-2 text-white rounded-md bg-indigo-600"
+            >
+              Submit
+            </button>
+            <div class="text-right p-2 text-gray-500">
+              Left- <span class="countdown">2.00</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      //  Email.send({
+      //  Host: "smtp.gmail.com",
+      //  Username: "fez71536@jeoce.com",
+      //  Password: "Pa$$w0rd!",
+      //  To: "fez71536@jeoce.com",
+      //  From: "pranthokumardas786@gmail.com",
+      //  Subject: "This is the subject",
+      //  Body: "And this is the body",
+      //  }).then((message) => alert(message)); -->
+      let ctd = document.querySelector(".countdown");
+      const pins = document.querySelectorAll(".pin");
+      //count down
+      var countDown = 120;
+      setInterval(function () {
+        countDown--;
+        if (countDown <= 0) {
+          countDown = 120;
+        }
+        ctd.innerText = countDown;
+      }, 1000);
+      // auto focus
+      pins.forEach((pin, i) => {
+        pin.addEventListener("keyup", (e) => {
+          if (pins.length - 1 == i) {
+            pins[0].focus();
+          } else {
+            pins[i + 1].focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
